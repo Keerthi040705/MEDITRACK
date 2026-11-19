@@ -1,0 +1,456 @@
+{
+  "diabetes": {
+    "algorithm": "Neural Network (MLP)",
+    "params": {
+      "clf__alpha": 10.0,
+      "clf__hidden_layer_sizes": [
+        32,
+        16
+      ]
+    },
+    "cv": {
+      "roc_auc": 0.8445,
+      "roc_auc_std": 0.0412,
+      "accuracy": 0.7644,
+      "accuracy_std": 0.0353,
+      "sensitivity": 0.5993,
+      "sensitivity_std": 0.0684,
+      "specificity": 0.853,
+      "specificity_std": 0.0335,
+      "brier": 0.1539,
+      "brier_std": 0.0189,
+      "seconds": 86.9
+    },
+    "leaderboard": {
+      "Logistic Regression": {
+        "roc_auc": 0.8365,
+        "roc_auc_std": 0.0442,
+        "accuracy": 0.7689,
+        "accuracy_std": 0.0287,
+        "sensitivity": 0.5488,
+        "sensitivity_std": 0.0678,
+        "specificity": 0.887,
+        "specificity_std": 0.0283,
+        "brier": 0.1575,
+        "brier_std": 0.017,
+        "seconds": 2.9
+      },
+      "Random Forest": {
+        "roc_auc": 0.8344,
+        "roc_auc_std": 0.0394,
+        "accuracy": 0.7572,
+        "accuracy_std": 0.0304,
+        "sensitivity": 0.5545,
+        "sensitivity_std": 0.0582,
+        "specificity": 0.866,
+        "specificity_std": 0.041,
+        "brier": 0.1584,
+        "brier_std": 0.0136,
+        "seconds": 34.3
+      },
+      "Gradient Boosting": {
+        "roc_auc": 0.8337,
+        "roc_auc_std": 0.0401,
+        "accuracy": 0.7572,
+        "accuracy_std": 0.0441,
+        "sensitivity": 0.5731,
+        "sensitivity_std": 0.0553,
+        "specificity": 0.856,
+        "specificity_std": 0.0504,
+        "brier": 0.1567,
+        "brier_std": 0.0181,
+        "seconds": 10.1
+      },
+      "SVM (RBF)": {
+        "roc_auc": 0.8383,
+        "roc_auc_std": 0.0385,
+        "accuracy": 0.7592,
+        "accuracy_std": 0.0343,
+        "sensitivity": 0.5396,
+        "sensitivity_std": 0.0623,
+        "specificity": 0.877,
+        "specificity_std": 0.0323,
+        "brier": 0.1611,
+        "brier_std": 0.0132,
+        "seconds": 2.5
+      },
+      "Neural Network (MLP)": {
+        "roc_auc": 0.8445,
+        "roc_auc_std": 0.0412,
+        "accuracy": 0.7644,
+        "accuracy_std": 0.0353,
+        "sensitivity": 0.5993,
+        "sensitivity_std": 0.0684,
+        "specificity": 0.853,
+        "specificity_std": 0.0335,
+        "brier": 0.1539,
+        "brier_std": 0.0189,
+        "seconds": 86.9
+      }
+    },
+    "legacy_rules_auc": 0.7926,
+    "n_samples": 768,
+    "n_people": 768,
+    "positive_rate": 0.349
+  },
+  "kidney": {
+    "algorithm": "Logistic Regression",
+    "params": {
+      "clf__C": 3.0
+    },
+    "cv": {
+      "roc_auc": 0.9987,
+      "roc_auc_std": 0.0025,
+      "accuracy": 0.9812,
+      "accuracy_std": 0.0225,
+      "sensitivity": 0.98,
+      "sensitivity_std": 0.0253,
+      "specificity": 0.9833,
+      "specificity_std": 0.0269,
+      "brier": 0.014,
+      "brier_std": 0.0122,
+      "seconds": 1.4
+    },
+    "leaderboard": {
+      "Logistic Regression": {
+        "roc_auc": 0.9987,
+        "roc_auc_std": 0.0025,
+        "accuracy": 0.9812,
+        "accuracy_std": 0.0225,
+        "sensitivity": 0.98,
+        "sensitivity_std": 0.0253,
+        "specificity": 0.9833,
+        "specificity_std": 0.0269,
+        "brier": 0.014,
+        "brier_std": 0.0122,
+        "seconds": 1.4
+      },
+      "Random Forest": {
+        "roc_auc": 0.9995,
+        "roc_auc_std": 0.0008,
+        "accuracy": 0.9875,
+        "accuracy_std": 0.0168,
+        "sensitivity": 0.996,
+        "sensitivity_std": 0.008,
+        "specificity": 0.9733,
+        "specificity_std": 0.0389,
+        "brier": 0.0157,
+        "brier_std": 0.0094,
+        "seconds": 29.2
+      },
+      "Gradient Boosting": {
+        "roc_auc": 0.9996,
+        "roc_auc_std": 0.0007,
+        "accuracy": 0.9888,
+        "accuracy_std": 0.0118,
+        "sensitivity": 0.99,
+        "sensitivity_std": 0.0161,
+        "specificity": 0.9867,
+        "specificity_std": 0.0267,
+        "brier": 0.0083,
+        "brier_std": 0.0075,
+        "seconds": 9.8
+      },
+      "SVM (RBF)": {
+        "roc_auc": 0.9972,
+        "roc_auc_std": 0.0037,
+        "accuracy": 0.9738,
+        "accuracy_std": 0.0197,
+        "sensitivity": 0.972,
+        "sensitivity_std": 0.016,
+        "specificity": 0.9767,
+        "specificity_std": 0.0335,
+        "brier": 0.0471,
+        "brier_std": 0.0112,
+        "seconds": 1.7
+      },
+      "Neural Network (MLP)": {
+        "roc_auc": 0.9987,
+        "roc_auc_std": 0.002,
+        "accuracy": 0.9812,
+        "accuracy_std": 0.017,
+        "sensitivity": 0.982,
+        "sensitivity_std": 0.0189,
+        "specificity": 0.98,
+        "specificity_std": 0.034,
+        "brier": 0.0147,
+        "brier_std": 0.0107,
+        "seconds": 9.7
+      }
+    },
+    "legacy_rules_auc": 0.8992,
+    "n_samples": 400,
+    "n_people": 400,
+    "positive_rate": 0.625
+  },
+  "liver": {
+    "algorithm": "Logistic Regression",
+    "params": {
+      "clf__C": 0.1
+    },
+    "cv": {
+      "roc_auc": 0.7499,
+      "roc_auc_std": 0.044,
+      "accuracy": 0.7058,
+      "accuracy_std": 0.0201,
+      "sensitivity": 0.929,
+      "sensitivity_std": 0.0516,
+      "specificity": 0.1497,
+      "specificity_std": 0.0973,
+      "brier": 0.1742,
+      "brier_std": 0.0117,
+      "seconds": 1.5
+    },
+    "leaderboard": {
+      "Logistic Regression": {
+        "roc_auc": 0.7499,
+        "roc_auc_std": 0.044,
+        "accuracy": 0.7058,
+        "accuracy_std": 0.0201,
+        "sensitivity": 0.929,
+        "sensitivity_std": 0.0516,
+        "specificity": 0.1497,
+        "specificity_std": 0.0973,
+        "brier": 0.1742,
+        "brier_std": 0.0117,
+        "seconds": 1.5
+      },
+      "Random Forest": {
+        "roc_auc": 0.7449,
+        "roc_auc_std": 0.0451,
+        "accuracy": 0.6973,
+        "accuracy_std": 0.0348,
+        "sensitivity": 0.9133,
+        "sensitivity_std": 0.0669,
+        "specificity": 0.1586,
+        "specificity_std": 0.1076,
+        "brier": 0.176,
+        "brier_std": 0.0117,
+        "seconds": 31.2
+      },
+      "Gradient Boosting": {
+        "roc_auc": 0.7258,
+        "roc_auc_std": 0.0408,
+        "accuracy": 0.6853,
+        "accuracy_std": 0.0173,
+        "sensitivity": 0.887,
+        "sensitivity_std": 0.0458,
+        "specificity": 0.1828,
+        "specificity_std": 0.0814,
+        "brier": 0.185,
+        "brier_std": 0.0134,
+        "seconds": 8.9
+      },
+      "SVM (RBF)": {
+        "roc_auc": 0.6824,
+        "roc_auc_std": 0.0331,
+        "accuracy": 0.7007,
+        "accuracy_std": 0.019,
+        "sensitivity": 0.9064,
+        "sensitivity_std": 0.0634,
+        "specificity": 0.1892,
+        "specificity_std": 0.122,
+        "brier": 0.198,
+        "brier_std": 0.0063,
+        "seconds": 2.1
+      },
+      "Neural Network (MLP)": {
+        "roc_auc": 0.7543,
+        "roc_auc_std": 0.0439,
+        "accuracy": 0.7109,
+        "accuracy_std": 0.028,
+        "sensitivity": 0.923,
+        "sensitivity_std": 0.0521,
+        "specificity": 0.1821,
+        "specificity_std": 0.0831,
+        "brier": 0.1715,
+        "brier_std": 0.0119,
+        "seconds": 67.8
+      }
+    },
+    "legacy_rules_auc": 0.7183,
+    "n_samples": 583,
+    "n_people": 583,
+    "positive_rate": 0.714
+  },
+  "heart": {
+    "algorithm": "Logistic Regression",
+    "params": {
+      "clf__C": 0.03
+    },
+    "cv": {
+      "roc_auc": 0.8676,
+      "roc_auc_std": 0.0247,
+      "accuracy": 0.7889,
+      "accuracy_std": 0.0442,
+      "sensitivity": 0.7378,
+      "sensitivity_std": 0.0584,
+      "specificity": 0.8324,
+      "specificity_std": 0.057,
+      "brier": 0.1491,
+      "brier_std": 0.013,
+      "seconds": 1.2
+    },
+    "leaderboard": {
+      "Logistic Regression": {
+        "roc_auc": 0.8676,
+        "roc_auc_std": 0.0247,
+        "accuracy": 0.7889,
+        "accuracy_std": 0.0442,
+        "sensitivity": 0.7378,
+        "sensitivity_std": 0.0584,
+        "specificity": 0.8324,
+        "specificity_std": 0.057,
+        "brier": 0.1491,
+        "brier_std": 0.013,
+        "seconds": 1.2
+      },
+      "Random Forest": {
+        "roc_auc": 0.8631,
+        "roc_auc_std": 0.0189,
+        "accuracy": 0.7807,
+        "accuracy_std": 0.0294,
+        "sensitivity": 0.7156,
+        "sensitivity_std": 0.0503,
+        "specificity": 0.8359,
+        "specificity_std": 0.078,
+        "brier": 0.1528,
+        "brier_std": 0.0088,
+        "seconds": 30.0
+      },
+      "Gradient Boosting": {
+        "roc_auc": 0.8675,
+        "roc_auc_std": 0.0242,
+        "accuracy": 0.7707,
+        "accuracy_std": 0.0395,
+        "sensitivity": 0.7265,
+        "sensitivity_std": 0.0705,
+        "specificity": 0.8082,
+        "specificity_std": 0.0552,
+        "brier": 0.15,
+        "brier_std": 0.0133,
+        "seconds": 8.9
+      },
+      "SVM (RBF)": {
+        "roc_auc": 0.8573,
+        "roc_auc_std": 0.0312,
+        "accuracy": 0.7839,
+        "accuracy_std": 0.0416,
+        "sensitivity": 0.716,
+        "sensitivity_std": 0.0506,
+        "specificity": 0.8419,
+        "specificity_std": 0.0663,
+        "brier": 0.1625,
+        "brier_std": 0.01,
+        "seconds": 1.7
+      },
+      "Neural Network (MLP)": {
+        "roc_auc": 0.8683,
+        "roc_auc_std": 0.0262,
+        "accuracy": 0.7872,
+        "accuracy_std": 0.0351,
+        "sensitivity": 0.7341,
+        "sensitivity_std": 0.0591,
+        "specificity": 0.8327,
+        "specificity_std": 0.0562,
+        "brier": 0.1477,
+        "brier_std": 0.0145,
+        "seconds": 38.4
+      }
+    },
+    "legacy_rules_auc": 0.671,
+    "n_samples": 303,
+    "n_people": 303,
+    "positive_rate": 0.459
+  },
+  "parkinsons": {
+    "algorithm": "Logistic Regression",
+    "params": {
+      "clf__C": 0.03
+    },
+    "cv": {
+      "roc_auc": 0.8517,
+      "roc_auc_std": 0.1073,
+      "accuracy": 0.8329,
+      "accuracy_std": 0.0971,
+      "sensitivity": 0.96,
+      "sensitivity_std": 0.0854,
+      "specificity": 0.4083,
+      "specificity_std": 0.4039,
+      "brier": 0.1422,
+      "brier_std": 0.0488,
+      "seconds": 1.4
+    },
+    "leaderboard": {
+      "Logistic Regression": {
+        "roc_auc": 0.8517,
+        "roc_auc_std": 0.1073,
+        "accuracy": 0.8329,
+        "accuracy_std": 0.0971,
+        "sensitivity": 0.96,
+        "sensitivity_std": 0.0854,
+        "specificity": 0.4083,
+        "specificity_std": 0.4039,
+        "brier": 0.1422,
+        "brier_std": 0.0488,
+        "seconds": 1.4
+      },
+      "Random Forest": {
+        "roc_auc": 0.8375,
+        "roc_auc_std": 0.1062,
+        "accuracy": 0.7808,
+        "accuracy_std": 0.092,
+        "sensitivity": 0.9234,
+        "sensitivity_std": 0.1239,
+        "specificity": 0.3167,
+        "specificity_std": 0.3648,
+        "brier": 0.1502,
+        "brier_std": 0.0535,
+        "seconds": 28.5
+      },
+      "Gradient Boosting": {
+        "roc_auc": 0.7118,
+        "roc_auc_std": 0.1463,
+        "accuracy": 0.736,
+        "accuracy_std": 0.0644,
+        "sensitivity": 0.8716,
+        "sensitivity_std": 0.0884,
+        "specificity": 0.3083,
+        "specificity_std": 0.3671,
+        "brier": 0.2178,
+        "brier_std": 0.0568,
+        "seconds": 8.7
+      },
+      "SVM (RBF)": {
+        "roc_auc": 0.6796,
+        "roc_auc_std": 0.2252,
+        "accuracy": 0.7965,
+        "accuracy_std": 0.1172,
+        "sensitivity": 0.9734,
+        "sensitivity_std": 0.0675,
+        "specificity": 0.2417,
+        "specificity_std": 0.3301,
+        "brier": 0.1689,
+        "brier_std": 0.0554,
+        "seconds": 1.6
+      },
+      "Neural Network (MLP)": {
+        "roc_auc": 0.7386,
+        "roc_auc_std": 0.1803,
+        "accuracy": 0.7647,
+        "accuracy_std": 0.124,
+        "sensitivity": 0.8907,
+        "sensitivity_std": 0.1274,
+        "specificity": 0.3417,
+        "specificity_std": 0.3583,
+        "brier": 0.1856,
+        "brier_std": 0.0987,
+        "seconds": 15.9
+      }
+    },
+    "legacy_rules_auc": 0.749,
+    "n_samples": 195,
+    "n_people": 32,
+    "positive_rate": 0.754
+  }
+}

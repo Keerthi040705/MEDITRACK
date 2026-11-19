@@ -1,0 +1,8 @@
+node_modules/
+frontend/dist/
+ai-service/.venv/
+__pycache__/
+*.pyc
+backend/.env
+.DS_Store
+ai-service/models/*.joblib

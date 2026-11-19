@@ -1,0 +1,25 @@
+{
+  "name": "final-capstone",
+  "version": "2.0.0",
+  "description": "MediTrack healthcare portal - MongoDB, Express, React, Node.js + Python AI service",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "setup": "npm install && npm install --prefix backend && npm install --prefix frontend && node scripts/python.js install",
+    "dev": "concurrently -k -n API,WEB,AI -c green,cyan,magenta \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\" \"node scripts/python.js run\"",
+    "build": "npm run build --prefix frontend",
+    "start": "concurrently -k -n API,AI -c green,magenta \"npm start --prefix backend\" \"node scripts/python.js run\"",
+    "api": "npm run dev --prefix backend",
+    "web": "npm run dev --prefix frontend",
+    "ai": "node scripts/python.js run",
+    "test:ai": "node scripts/python.js test",
+    "train:ai": "node scripts/python.js train",
+    "evaluate:ai": "node scripts/python.js evaluate",
+    "check": "node scripts/check.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
